@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subscribe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220526/pngtree-subscribe-concept-blue-on-information-photo-image_18258388.jpg);
+            background-repeat: no-repeat;
+            background-size: 1500px;
+            text-align: center;
+        }
+        .portfolio {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="portfolio">
+    <div class="portfolio-grid">
+    <div class="newsletter-container">
+        <h1>Subscribe to Our Travel Newsletter</h1>
+        <p>Stay updated with the latest travel deals and tips!</p>
+        <form class="newsletter-form" action="subscribe.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

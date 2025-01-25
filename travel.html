@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .portfolio {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .portfolio h1 {
+            text-align: center;
+            color: #7f0258;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .portfolio-item {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .portfolio-item h2 {
+            margin: 10px;
+            font-size: 1.5em;
+            color: #150606;
+        }
+        .portfolio-item p {
+            margin: 10px;
+            color: #777;
+        }
+        #part1{
+            background-image:url(https://tse2.mm.bing.net/th?id=OIP.6tJFpwVuTqv3RtaqTdoTrQHaEK&pid=Api&P=0&h=180);
+            height: 400px;
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+        body{
+            background-color:plum;
+        }
+        .newsletter-container {
+            text-align: center;
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .newsletter-container h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+        }
+
+        .newsletter-container p {
+            font-size: 1rem;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .newsletter-form input[type="text"],
+        .newsletter-form input[type="email"] {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .newsletter-form input[type="text"]:focus,
+        .newsletter-form input[type="email"]:focus {
+            border-color: #3498db;
+        }
+        .newsletter-form button {
+            padding: 12px;
+            font-size: 1rem;
+            color: #fff;
+            background: #3498db;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .newsletter-form button:hover {
+            background: #2980b9;
+        }
+        @media (max-width: 480px) {
+        .newsletter-container {
+            padding: 20px;
+        }
+}
+ </style>
+</head>
+<body>
+    <section id="part1">
+        <h1 style="text-align: center;padding: 130px; font-size:40px;">WELCOME TO OUR TRAVEL AGENCY </h1>
+    </section>
+    <div class="portfolio">
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.E3PPsxjqt3N4DOy51yERUgHaE7&pid=Api&P=0&h=180" alt="PARIS">
+                <h2>PARIS</h2>
+                <p>The city of light and love, known for its iconic Eiffel Tower and charming streets.</p>
+                <p class="price">Price: $1200</p>
+                <a href="#" class="book-now">Book Now</a>
+                <p>HotelName: Pullman Paris Tour Eiffel
+                    📍 Location: 18 Avenue De Suffren, Entrée au 22 rue Jean Rey, 15th arr., Paris
+                    📞 Contact: +1 123-456-7890
+                    🌐 Website: www.hotelname.com</p>
+
+            </div>
+            <div class="portfolio-item">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.3V2qdnLqVmvqzb4jKSNPoQHaEo&pid=Api&P=0&h=180" alt="TOKYO">
+                <h2>TOKYO</h2>
+                <p>A vibrant city blending ultramodern skyscrapers with traditional temples.</p>
+                <p class="price">Price: $1300</p>
+                <a href="#" class="book-now">Book Now</a>
+                <p>HotelName: Shinagawa Prince Hotel
+                    📍 Location:Tokyo, Minato-ku, Takanawa 4-10-30
+                    📞 Contact: +1 123-456-7890
+                    🌐 Website: www.hotelname.com</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.yHyCLoftjrgiRXgqOipTgAHaFS&pid=Api&P=0&h=180" alt="SYDNEY">
+                <h2>SYDNEY</h2>
+                <p>Famous for its Sydney Opera House, harbor, and stunning beaches.</p>
+                <p class="price">Price: $1400</p>
+                <a href="#" class="book-now">Book Now</a>
+                <p>HotelName: Moxy Sydney Airport
+                    📍 Location: 56 Baxter Road, Mascot, Sydney
+                    📞 Contact: +1 123-456-7890
+                    🌐 Website: www.hotelname.com</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.9DfB7IDaOMv-4BG_klL5LwHaEK&pid=Api&P=0&h=180" alt="NEW YORK">
+                <h2>NEW YORK</h2>
+                <p>The city that never sleeps, home to iconic landmarks like Times Square and Central Park.</p>
+                <p class="price">Price: $1500</p>
+                <a href="#" class="book-now">Book Now</a>
+                <p>HotelName: Luxury Stay in the Heart of New York!
+                    📍 Location: 123 Main Street, New York, NY
+                    📞 Contact: +1 123-456-7890
+                    🌐 Website: www.hotelname.com
+                    </p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.jdwCQucUK-8nDBTYiWoSlQHaES&pid=Api&P=0&h=180" alt="GRAND CANYON WEST">
+                <h2>GRAND CANYON WEST</h2>
+                <p> Rather it is located at Grand Canyon West, on reservation land owned by the Hualapai Indian Tribe</p>
+                <p class="price">Price: $1600</p>
+                <a href="#" class="book-now">Book Now</a>
+                <p>HotelName: Kanab Suites
+                    📍 Location: 157 W Center Street, Kanab, UT
+                    📞 Contact: +1 123-456-7890
+                    🌐 Website: www.hotelname.com</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.hu30ldvNUyOwwWB8MPYvSQHaE8&pid=Api&P=0&h=180" alt="VALCANOES WATERFALLS SIGHTSEEING">
+                <h2>VALCANOES WATERFALLS SIGHTSEEING</h2>
+                <p>One of the most amazing volcanoes to hike and camp is the Brukkaros in Namibia.</p>
+                <p class="price">Price: $1700</p>
+                <a href="#" class="book-now">Book Now</a>
+                <p>HotelName: Volcano House
+                    📍 Location: Hawaii, USA
+                    📞 Contact: +1 123-456-7890
+                    🌐 Website: www.hotelname.com</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.9cfqF7NsOjMWWPRNXxtn8wHaE8&pid=Api&P=0&h=180" alt="THAILAND">
+                <h2>THAILAND</h2>
+                <p>Thailand's most impressive natural feature has got to be its islands and beaches.</p>
+                <p class="price">Price: $1800</p>
+                <a href="#" class="book-now">Book Now</a>
+                <p>HotelName: Signature Pattaya
+                    📍 Location: WALKING STREET
+                    📞 Contact: +1 123-456-7890
+                    🌐 Website: www.hotelname.com</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.YyXOl_OsAiZUs2l_ilYmNgHaEO&pid=Api&P=0&h=180" alt="CANADA">
+                <h2>CANADA</h2>
+                <p>Canada is famous for the vast, breathtaking nature</p>
+                <p class="price">Price: $1900</p>
+                <a href="#" class="book-now">Book Now</a>
+                <p>HotelName: Fairmont Royal York Hotel
+                    📍 Location: 100 Front Street West, Toronto
+                    📞 Contact: +1 123-456-7890
+                    🌐 Website: www.hotelname.com</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.c4OXrWsrO9I5ZdvyyExtigHaFO&pid=Api&P=0&h=180" alt="TURKEY">
+                <h2>TURKEY</h2>
+                <p>Turkey is a dazzling vacation destination for tourists who love to witness ancient monuments and empires.</p>
+                <p class="price">Price: $2000</p>
+                <a href="#" class="book-now">Book Now</a>
+                <p>HotelName:Hilton Istanbul Bomonti
+                    📍 Location: Silahsor Cad. No: 42 Bomonti-Sisli, Sisli, Istanbul
+                    📞 Contact: +1 123-456-7890
+                    🌐 Website: www.hotelname.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
